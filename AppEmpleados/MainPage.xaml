@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppEmpleados.MainPage"
+             Title="Registrar Empleado">
+
+    <ScrollView>
+        <StackLayout Padding="20" Spacing="15">
+
+            <Frame BackgroundColor="#FFFFFF"
+                   HasShadow="True"
+                   CornerRadius="8"
+                   Margin="0,0,0,10">
+                <Entry x:Name="txtNombres" Placeholder="Nombres" TextColor="#333333" HeightRequest="40" FontSize="16" />
+            </Frame>
+
+            <Frame BackgroundColor="#FFFFFF"
+                   HasShadow="True"
+                   CornerRadius="8"
+                   Margin="0,0,0,10">
+                <Entry x:Name="txtApellidos" Placeholder="Apellidos" TextColor="#333333" HeightRequest="40" FontSize="16" />
+            </Frame>
+
+            <Label Text="Fecha de Nacimiento" FontSize="18" />
+
+            <Frame BackgroundColor="#FFFFFF"
+                   HasShadow="True"
+                   CornerRadius="8"
+                   Margin="0,0,0,10">
+                <DatePicker x:Name="dpFechaNacimiento" FontSize="16" />
+            </Frame>
+
+            <Frame BackgroundColor="#FFFFFF"
+                   HasShadow="True"
+                   CornerRadius="8"
+                   Margin="0,0,0,10">
+                <Entry x:Name="txtCorreo" Placeholder="Correo Electrónico" TextColor="#333333" HeightRequest="40" FontSize="16" Keyboard="Email" />
+            </Frame>
+
+            <Button Text="Registrar" Clicked="GuardarEmpleado" FontSize="20" BackgroundColor="#007ACC" TextColor="White" CornerRadius="5" />
+
+            <Button Text="Ver Empleados" Clicked="VerEmpleado" FontSize="20" BackgroundColor="#009933" TextColor="White" CornerRadius="5" />
+
+            <Label x:Name="lblConfirmacion" Text="" TextColor="#007ACC" FontSize="18" HorizontalOptions="Center" />
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
